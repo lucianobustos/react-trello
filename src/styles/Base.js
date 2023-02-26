@@ -1,5 +1,5 @@
-import {PopoverContainer, PopoverContent} from 'react-popopo'
-import styled, {createGlobalStyle, css} from 'styled-components'
+import { PopoverContainer, PopoverContent } from 'react-popopo'
+import styled, { createGlobalStyle, css } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   .comPlainTextContentEditable {
@@ -148,8 +148,9 @@ export const Title = styled.span`
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
+  white-space: pre-wrap;
   cursor: ${props => (props.draggable ? 'grab' : `auto`)};
-  width: 70%;
+  width: 100%;
 `
 
 export const RightContent = styled.span`
@@ -165,7 +166,7 @@ export const CardWrapper = styled.article`
   position: relative;
   padding: 10px;
   cursor: pointer;
-  max-width: 250px;
+  max-width: 320px;
   margin-bottom: 7px;
   min-width: 230px;
 `
@@ -184,7 +185,7 @@ export const CardHeader = styled(Header)`
 `
 
 export const CardTitle = styled(Title)`
-  font-size: 14px;
+  font-size: 12px;
 `
 
 export const CardRightContent = styled(RightContent)`

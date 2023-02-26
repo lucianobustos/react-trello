@@ -180,7 +180,7 @@ class BoardContainer extends Component {
             getChildPayload={index => this.getLaneDetails(index)}
             groupName={this.groupName}>
             {reducerData.lanes.map((lane, index) => {
-              const {id, droppable, ...otherProps} = lane
+              const {id, droppable, ...otherProps} = lane;
               const laneToRender = (
                 <Lane
                   key={id}
@@ -192,6 +192,7 @@ class BoardContainer extends Component {
                   droppable={droppable === undefined ? true : droppable}
                   style={laneStyle || lane.style || {}}
                   labelStyle={lane.labelStyle || {}}
+                  className={lane?.cards.length < 1 ? 'zeroItemsCard' : lane?.style?.className}
                   cardStyle={this.props.cardStyle || lane.cardStyle}
                   editable={editable && !lane.disallowAddingCard}
                   {...otherProps}

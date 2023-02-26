@@ -1,3 +1,21 @@
 .boardContainer {
     background-color: #4BBF6B;
 }
+
+.zeroItemsCard {
+    border: 1px solid red;
+}
+/*
+.zeroItemsCard header span {
+    transform-origin: 2 0;
+    transform: rotate(90deg);
+}
+
+.zeroItemsCard header span:nth-child(2) {
+    margin-left: -5px;
+    margin-top: 150px;
+}*/
+
+ .userIcon {
+    border-radius: 50%;
+  }
